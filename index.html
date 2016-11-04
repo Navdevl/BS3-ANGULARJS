@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Experimenting with BS3</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.11/angular-filter.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <script src="js/dirPagination.js" charset="utf-8"></script>
+
+
+  </head>
+  <body>
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title">
+
+    <div class="container-fluid">
+      <!-- Notification Area -->
+      <div id="header"  class="notify row">
+        <div class="text-center">
+          <a href="new.html"><p>Check here for new articles and tutorials  <span class="glyphicon glyphicon-arrow-right	Try it"></span><p></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container ">
+            <div class="navbar-header ">
+              <a href="#" class="navbar-brand">Experiments with BS3 & AngularJS</a>
+              <button data-toggle="collapse" class="navbar-toggle" data-target=".collapse" type="button" name="button"><span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            <span class="icon-bar"></span></button>
+
+            </div>
+            <div class="collapse navbar-collapse navbar-custom" >
+              <ul class="nav navbar-nav navbar-right ">
+                <li><a href="developer.html">About the Developer</a></li>
+                </li>
+             </ul>
+           </div>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="container" ng-controller="blogCtrl">
+      <h1 class="blog ">Stolen Diamonds</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-6">
+
+          <div class="group" dir-paginate="post in posts|itemsPerPage:3">
+            <p class="h4">
+              {{post.heading}}
+            </p>
+            <p class="contents">
+              <b>Category:</b> <span class="categ">{{post.category}}</span>
+            </p>
+            <p class="contents">
+              {{post.contents}}
+            </p>
+            <p>
+              <small>Posted on {{post.posted}}</small>
+            </p>
+            <button class="read-more" name="button">Read More</button>
+          </div>
+
+          <div class="col-sm-11 col-sm-offset-1 pull-left">
+            <dir-pagination-controls
+             max-size="7"
+             direction-links="true"
+             boundary-links="true"
+             class="" >
+          </dir-pagination-controls>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-sm-offset-1 col-sm-4 pull-right">
+
+          <h2>Categories</h2>
+          <ul>
+            <li class="cat" ng-repeat="post in posts |unique: 'category'">{{post.category}}</li>
+          </ul>
+      </div></div>
+
+
+    </div>
+
+
+
+    <footer>
+      <div class="container-fluid">
+
+        <div class="container">
+
+
+        <div class="row ">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <p>
+              Contact
+            </p>
+            <div class="foot-wrap">
+              <p>
+                <span class="glyphicon glyphicon-earphone">&nbsp</span>+91 9840909623<br>
+                <span class="glyphicon glyphicon-envelope">&nbsp</span>naveendurai19@gmail.com
+              </p>
+            </div>
+
+          </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <p>
+                Follow Me
+              </p>
+              <div class="foot-wrap">
+                <p><a href="https://www.facebook.com/navdevl">Facebook</a><br></p><p><a href="https://twitter.com/NaveenDurai19">Twitter</a>
+                </p>
+
+              </div>
+
+            </div>
+
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4">
+                  <p><br>&nbsp
+                    &copy Copyright NavDevl
+                  </p>
+                </div>
+
+              </div>
+                </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+[
+  {
+    "heading":"1.Say Something Real or Say Nothing At All" ,
+    "contents": "Sometimes, I want to say something persona. Sometimes, writing about design and business and tech isn’t what is in my heart that day. So for the first time, I’m going to experiment with write about whatever I want..." ,
+    "posted": "November 16, 2016",
+    "category": "Tech"
+  },
+  {
+    "heading" : "2.The Advanced Cat-Thread Theory of System Design",
+    "contents": "You’re sitting on top of a tall pole. In your hands is a thread that stretches to someone also sitting on a tall pole across from you. Dangling from this thread is a simple tennis ball. And lounging dangerously close to the system that you’re keeping in a delicate balance is a curious, simple cat that may be signing up for more than it bargained for. This is systems thinking, and it’s meow-verlous.",
+    "posted": "July 2, 2016",
+    "category": "Philosophy"
+  },
+
+  {
+    "heading" : "3.What if I only have one touchpoint? Service Design Answers Video",
+    "contents": "“What if I only have one touchpoint?” This question was asked to me in a casual conference conversation, so I wanted to do a short video explaining how I don’t think anything is just one touchpoint.",
+    "posted": "June 19, 2016",
+    "category": "Geeky"
+  },
+
+  {
+    "heading" : "4.Why Customer Experience Isn’t Enough: Silicon Valley Needs Service Design",
+    "contents": "Megan and I recently published an article in the Service Design Network’s “Touchpoint Magazine”, and it is now publicly available to read on their website." ,
+    "posted": "June 8, 2016",
+    "category": "Novel"
+  },
+  {
+    "heading":"5.Say Something Real or Say Nothing At All" ,
+    "contents": "Sometimes, I want to say something persona. Sometimes, writing about design and business and tech isn’t what is in my heart that day. So for the first time, I’m going to experiment with write about whatever I want..." ,
+    "posted": "November 14, 2016",
+    "category": "Reality"
+  },
+  {
+    "heading" : "6.The Advanced Cat-Thread Theory of System Design",
+    "contents": "You’re sitting on top of a tall pole. In your hands is a thread that stretches to someone also sitting on a tall pole across from you. Dangling from this thread is a simple tennis ball. And lounging dangerously close to the system that you’re keeping in a delicate balance is a curious, simple cat that may be signing up for more than it bargained for. This is systems thinking, and it’s meow-verlous.",
+    "posted": "July 2, 2016",
+    "category": "System Design"
+  },
+
+  {
+    "heading" : "7.What if I only have one touchpoint? Service Design Answers Video",
+    "contents": "“What if I only have one touchpoint?” This question was asked to me in a casual conference conversation, so I wanted to do a short video explaining how I don’t think anything is just one touchpoint.",
+    "posted": "June 19, 2016",
+    "category": "Services"
+  }
+
+]
